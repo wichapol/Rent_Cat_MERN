@@ -23,6 +23,38 @@ h1 {
   color: orange;
 }
 
+p {
+  margin: 5px !important;
+  text-align: left;
+  padding: 0;
+}
+
+.btn1 {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: orange !important;
+  border: 1px solid orange !important;
+}
+
+button .btn1 {
+  padding: 5px 15px !important;
+}
+
+.btn1:focus {
+  border: none;
+}
+
+button {
+  padding: 5px !important;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
 .header {
   padding: 10px;
   background: azure;
@@ -30,4 +62,74 @@ h1 {
 
 .content {
   min-height: 90vh;
+}
+
+.carimg {
+  height: 180px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: translateY(-60px);
+}
+
+.car {
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 160px;
+  transition: 0.3s;
+}
+
+.car:hover {
+  height: 220px;
+}
+
+.car:hover>.car-content {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+.car-content {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.login {
+  background-color: black;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.login label,
+.login h1 {
+  color: white !important;
+  opacity: 0.6;
+}
+
+.login-form {
+  background-color: #1f1f1f;
+}
+
+.login-form input {
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  opacity: 0.5;
+}
+
+.login-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 50%;
+  transform: translateY(-50%, -60%);
+  font-size: 45px;
+  opacity: 0.2 !important;
+
+}
+
+.login a {
+  color: white !important;
+  opacity: 0.5;
 }
